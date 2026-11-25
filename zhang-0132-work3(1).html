@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>城市诗歌朗诵夜 · Poetry Reading Night</title>
+<style>
+/* 题目规定的.page样式，仅修改background-color为尾号2指定#FFF6D9，其余完全不动 */
+.page {
+    display: inline-block;
+    background-color: #FFF6D9;
+    box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+    text-align: left;
+    max-width: 720px;
+}
+
+/* ③并集选择器 h1‑h6 */
+h1, h2, h3, h4, h5, h6 {
+    color:#442c1c;
+    font-family:"SimSun",serif;
+}
+
+/* ①后代选择器 div table a */
+div table a {
+    color:#8b4513;
+    text-decoration:underline;
+}
+
+/* ②链接伪类 a:link,a:visited,a:hover,a:active */
+a:link{color:#2c5c97;}
+a:visited{color:#603896;}
+a:hover{color:#dd2c00; text-decoration:none;}
+a:active{color:#ff6600;}
+
+/* ④ID选择器 p#intro 强调：加粗、放大、特殊颜色 */
+p#intro{
+    font-weight:bold;
+    font-size:1.15em;
+    color:#b82601;
+}
+
+/* ⑤带类名的链接 a.red / a.blue */
+a.red{
+    color:#c41e3a;
+    margin-right:25px;
+}
+a.blue{
+    color:#1a5798;
+}
+
+/* ⑥伪元素 p::first‑letter 、div::first‑line */
+p::first-letter{
+    font-size:2em;
+    float:left;
+    margin-right:4px;
+    color:#802000;
+}
+div::first-line{
+    font-weight:bold;
+}
+
+.notice{
+    margin-top:20px;
+    padding:12px;
+    border-top:1px solid #d4c2a0;
+}
+table{
+    border-collapse:collapse;
+    width:95%;
+}
+th,td{
+    border:1px solid #bb9b7c;
+    padding:8px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+    <!--①顶部标题区：div包裹 h1主标题 -->
+    <div>
+        <h1>城市诗歌朗诵夜 · Poetry Reading Night</h1>
+    </div>
+
+    <!--②活动介绍区：div；h2；至少2个p；p id="intro"重要提示；≥3段，包含古诗词 -->
+    <div>
+        <h2>活动介绍</h2>
+        <p>城市的夜晚总藏着温柔诗意，我们召集热爱诗歌的朋友相聚，朗读古今诗词、现代短诗，分享自己喜爱的文字。无论你是否擅长朗诵，都可以来聆听、表达。</p>
+        <p>古人云“但愿人长久，千里共婵娟”，千百年的诗歌依旧可以打动当下的我们。在这里不必拘谨，轻声诵读，感受文字带来的精神共鸣。</p>
+        <p>我们会准备诗歌小册子，也欢迎大家自带喜欢的诗集，在夜色之下，共赴一场文字的约会。</p>
+        <p id="intro">重要提示：活动无需朗诵基础，请提前准备1篇自己喜爱的诗歌，现场自愿上台朗读。</p>
+    </div>
+
+    <!--③活动报名信息表格区 div包裹 h3；table表头+至少3行数据 -->
+    <div>
+        <h3>活动报名信息表</h3>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <th>意向朗诵篇目</th>
+                <th>到场时间</th>
+            </tr>
+            <tr>
+                <td>林晚</td>
+                <td>《再别康桥》</td>
+                <td>18:40</td>
+            </tr>
+            <tr>
+                <td>陈知夏</td>
+                <td>《水调歌头·明月几时有》</td>
+                <td>18:50</td>
+            </tr>
+            <tr>
+                <td>周沐风</td>
+                <td>《断章》</td>
+                <td>19:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--④页面链接区 div；内部div放两条链接；目标地址严格按作业要求 -->
+    <div>
+        <h3>相关跳转</h3>
+        <div>
+            <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a>
+            <a class="blue" href="job3.html">在线咨询活动详情</a>
+        </div>
+    </div>
+
+    <!--⑤底部公告区 div class="notice"；至少三段文本，带<br>换行 -->
+    <div class="notice">
+        公告一：本次诗歌朗诵夜时间为本月28日晚间19:00‑21:00<br>
+        公告二：场地座位有限，报名成功后请尽量准时到场，迟到二十分钟将不再保留预留座位。<br>
+        公告三：欢迎自带纸笔记录感受，现场禁止大声喧哗，共同维护安静诗意的氛围。
+    </div>
+
+</div>
+</body>
+</html>
